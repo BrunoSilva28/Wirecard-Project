@@ -1,21 +1,21 @@
-GET http://localhost:3003/purchase/a
+GET https://wirecard-projeto.herokuapp.com/purchase/a
 
 ###
-POST http://localhost:3003/purchase/1
+POST https://wirecard-projeto.herokuapp.com/purchase/1
 Content-Type: application/json
 
 {
     "buyer": {
-        "name": "TESTE",
-        "email": "teste@teste.com",
-        "cpf": "12345678901"
+        "name": "TESTE3",
+        "email": "teste3@teste.com",
+        "cpf": "12345678777"
     },
     "payment": {
-        "amount": 25.30,
-        "method": "CREDIT_CARD"
+        "amount": 100,
+        "method": "BOLETO"
     },
     "holder": {
-        "name": "",
+        "name": "HOLDER",
         "birthDate": "01/10/2000",
         "documentNumber": "111111111"
     },
@@ -25,6 +25,5 @@ Content-Type: application/json
         "cardNumber": "1111111111111111",
         "expirationDate": "01/08/2022",
         "cvv": "666"
-    },
-    "saveCreditCard": true
+    }
 }
