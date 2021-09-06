@@ -1,0 +1,30 @@
+GET http://localhost:3003/purchase/a
+
+###
+POST http://localhost:3003/purchase/1
+Content-Type: application/json
+
+{
+    "buyer": {
+        "name": "TESTE",
+        "email": "teste@teste.com",
+        "cpf": "12345678901"
+    },
+    "payment": {
+        "amount": 25.30,
+        "method": "CREDIT_CARD"
+    },
+    "holder": {
+        "name": "",
+        "birthDate": "01/10/2000",
+        "documentNumber": "111111111"
+    },
+    "creditCard": {
+        "holderName": "holderName",
+        "brand": "ELO",
+        "cardNumber": "1111111111111111",
+        "expirationDate": "01/08/2022",
+        "cvv": "666"
+    },
+    "saveCreditCard": true
+}
