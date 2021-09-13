@@ -11,7 +11,7 @@
 ## DOCUMENTAÇÃO DE FUNCIONAMENTO
 
 ### ENTITIES
-- Considerando a multiplicidade de entidades do projeto, será listo informações básicas sobre as mesmas abaixo:
+- Considerando a multiplicidade de entidades do projeto, será listado informações básicas sobre as mesmas abaixo:
     * boleto: registra as informações de geração do boleto, armazenando `id`, `code` e `expirationDate`. Todas as informações são geradas internamente no código, sendo o `expirationDate` lançado para 7 dias após a data de criação.
     * buyer: registra e capta informações de comprador de serviço/produto, captando `id`, `name`, `email` e `cpf` do mesmo.
     * client: fornece informações de fornecedor de serviço/produto, captando seu `id` e `name`. Esta entidade deve ser mockada no banco de dados para a execução dos endpoints.
